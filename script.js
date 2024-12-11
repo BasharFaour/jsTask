@@ -1,4 +1,4 @@
-function authenticateUser() {
+
     const username = prompt("Enter your username:");
     let attempts = 5;
     let password;
@@ -18,4 +18,4 @@ function authenticateUser() {
     }
 
     alert("Please try again later.");
-}
+
