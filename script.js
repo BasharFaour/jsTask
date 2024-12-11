@@ -7,7 +7,7 @@ while (attempts > 0) {
 
     if (password === "123") {
         alert(`Welcome, ${username}!`);
-        return;
+        
     } else {
         attempts--;
         if (attempts > 0) {
