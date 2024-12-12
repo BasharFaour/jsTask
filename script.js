@@ -1,14 +1,12 @@
 const username = prompt("Enter your username:");
 let attempts = 5;
 let password;
-let isAuthenticated = false;
 
 while (attempts > 0) {
     password = prompt("Enter your password:");
 
     if (password === "123") {
         alert(`Welcome, ${username}!`);
-        isAuthenticated = true;
         break; 
     } else {
         attempts--;
@@ -18,6 +16,6 @@ while (attempts > 0) {
     }
 }
 
-if (!isAuthenticated) {
+if (attempts === 0) {
     alert("Please try again later.");
 }
